@@ -15,6 +15,7 @@ namespace BreakFastTasks.EventExercise
 				Console.WriteLine("Target Temperature Reached! Alarm Activated!");
 
 				Console.WriteLine($"current Temperture in Fahrenheit:{w.TempInFahrenheit}");
+				Console.WriteLine($"location:{w.location}");
 			}
 			if(sender is House h)
 				Console.WriteLine("Open door on House");

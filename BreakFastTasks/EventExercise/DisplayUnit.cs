@@ -12,6 +12,10 @@ namespace BreakFastTasks.EventExercise
 		public void DisplayTemp(object sender, TempertureEventArgs e)
 		{
 			Console.WriteLine($"Temp:{e.temperature} at {e.eventTime}");
+			if (sender is WaterHeater w)
+			{
+				Console.WriteLine($"location:{w.location}");
+			}
 		}
 	}
 }
